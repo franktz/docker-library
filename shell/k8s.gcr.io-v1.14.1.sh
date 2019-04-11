@@ -7,6 +7,7 @@ images=(
     pause:3.1
     etcd:3.3.10
     coredns:1.3.1
+    flannel:v0.11.0-amd64
 )
 
 for key in ${images[@]} ; do
