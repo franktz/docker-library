@@ -12,4 +12,5 @@ images=(
 for key in ${images[@]} ; do
     docker pull registry.cn-shenzhen.aliyuncs.com/franktown/$key
     docker tag registry.cn-shenzhen.aliyuncs.com/franktown/$key k8s.gcr.io/$key
+    docker rmi registry.cn-shenzhen.aliyuncs.com/franktown/$key
 done
